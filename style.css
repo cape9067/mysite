@@ -1,0 +1,150 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #EC715F;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  height: 70px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-item {
+  width: 120px;
+  line-height: 70px;
+  color: #FAFAFA;
+  padding: 0 30px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.nav-item a {
+  color: #FAFAFA;
+}
+
+
+/*main-visual*/
+#mv {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #FAFAFA;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.mv-title {
+  padding-top: 200px;
+  font-size: 64px;
+}
+
+.mv-text {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/*portfolio*/
+#portfolio {
+  background-color: #ECEFF1;
+}
+
+.pf-row {
+  width: 920px;
+}
+
+.pf-title {
+  padding-top: 90px;
+  font-size: 32px;
+  font-color: #000000;
+  text-align: center;
+}
+
+.pf-title::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+.pf-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-color: #000000;
+  text-align: center;
+}
+
+.production-group {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 0 90px 0;
+  margin: 0 auto;
+}
+
+.production {
+  width: 300px;
+  height: 250px;
+  margin: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-1 {
+  background-image: url(img/sketch.jpg);
+}
+
+.bg-2{
+	background-image: url(img/websuku.png);
+}
+
+.bg-3{
+	background-image: url(img/write.jpg);
+}
+
+.bg-4{
+	background-image: url(img/webcamp.png);
+}
+
+.bg-5{
+	background-image: url(img/talk.jpg);
+}
+
+.bg-6{
+	background-image: url(img/webcamp-mother.png);
+}
+
+.production:nth-child(-n+3){
+	margin-top: 0;
+}
+
+.production:nth-child(3n){
+	margin-right: 0;
+}
